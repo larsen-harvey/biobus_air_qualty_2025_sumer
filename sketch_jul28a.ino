@@ -48,30 +48,10 @@ void loop() {
   }
   Serial.println("AQI reading success");
 
-//  Serial.println(F("---------------------------------------"));
-// Serial.println(F("Concentration Units (standard)"));
-//  Serial.print(F("PM 1.0: ")); Serial.print(data.pm10_standard);
+
   Serial.print(F("\t\tPM 2.5: ")); Serial.print(data.pm25_standard);
-//  Serial.print(F("\t\tPM 10: ")); Serial.println(data.pm100_standard);
-//  Serial.println(F("---------------------------------------"));
-//  Serial.println(F("Concentration Units (environmental)"));
-//  Serial.print(F("PM 1.0: ")); Serial.print(data.pm10_env);
   Serial.print(F("\t\tPM 2.5: ")); Serial.print(data.pm25_env);
-//  Serial.print(F("\t\tPM 10: ")); Serial.println(data.pm100_env);
-//  Serial.println(F("---------------------------------------"));
-//  Serial.print(F("Particles > 0.3um / 0.1L air:")); Serial.println(data.particles_03um);
-//  Serial.print(F("Particles > 0.5um / 0.1L air:")); Serial.println(data.particles_05um);
-//  Serial.print(F("Particles > 1.0um / 0.1L air:")); Serial.println(data.particles_10um);
   Serial.print(F("Particles > 2.5um / 0.1L air:")); Serial.println(data.particles_25um);
-//  Serial.print(F("Particles > 5.0um / 0.1L air:")); Serial.println(data.particles_50um);
-//  Serial.print(F("Particles > 10 um / 0.1L air:")); Serial.println(data.particles_100um);
-//  Serial.println(F("---------------------------------------"));
-//  Serial.println(F("AQI"));
-//  Serial.print(F("PM2.5 AQI US: ")); Serial.print(data.aqi_pm25_us);
-//  Serial.print(F("\tPM10  AQI US: ")); Serial.println(data.aqi_pm100_us);
-//  Serial.print(F("PM2.5 AQI China: ")); Serial.print(data.aqi_pm25_china);
-//  Serial.print(F("\tPM10  AQI China: ")); Serial.println(data.aqi_pm100_china);
-//  Serial.println(F("---------------------------------------"));
   Serial.println();
 
   delay(60000);
